@@ -31,5 +31,5 @@ df.to_sql('phishing_data', con=engine, if_exists='replace', index=False)
 print("✅ CSV loaded successfully into MySQL!")
 
 # --- Step 5: Verify ---
-check_df = pd.read_sql("SELECT * FROM phishing_data LIMIT 5;", con=engine)
-print(check_df)
+check_df = pd.read_sql("SELECT * FROM phishing_data;", con=engine)
+print(len(check_df))

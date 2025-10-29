@@ -1,8 +1,9 @@
 python-dotenv
 pandas
 numpy
-pymongo
-pymongo[srv]==3.12
+sqlalchemy
+mysql
 certifi
+urllib
 
 ## -e .  ## Referring to the Setup File(setup.py)
